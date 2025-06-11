@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upload</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ribeye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@18.1.1"></script>
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="left">
+            <a href="#">Home</a>
+            <a href="https://rizz-n.github.io/maison-rose/">galery</a>
+        </div>
+        <div class="logo">
+            <a href="">Maison rose</a>
+        </div>
+        <div class="right">
+            <a href="#uploadimg">Upload</a>
+            <a href="#footer">about me</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="title">
+            <h3 class="txt1">Hello</h3>
+            <h2 class="txt2">Welcome to <span>Maison Rose</span></h2>
+            <h2 class="txt3">Upload image</h2>
+        </div>
+        <div class="image">
+            <img src="image/mikasa.png" alt="mikasa">
+        </div>
+        <div class="cta">
+                <a href="https://rizz-n.github.io/maison-rose/" class="action">Go to Gallery</a>
+                <a href="#uploadimg">Upload now</a>
+            </div>
+    </div>
+    <div class="uploader" id="uploadimg">
+        <div class="subtitle">
+            <h2>you can upload image here</h2>
+        </div>
+        <div class="upload">
+            <input type="file" id="uploader" hidden/>
+            <label for="uploader" class="custom-file-upload">
+            <span>+</span>
+            </label>
+            <p id="file-name">Upload image (jpg, png, jpeg)</p>
+            <button id="upload-button">Upload</button>
+        </div>
+    </div>
+
+    <div class="alert" id="alert">
+        <h2>pilih file terlebih dahulu</h2>
+    </div>
+    <div class="succes" id="alertSucces">
+        <h2>Upload file berhasil</h2>
+    </div>
+    <div class="error" id="alertError">
+        <h2>Upload file gagal</h2>
+    </div>
+
+    <div id="gallery" class="galery">
+        
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="first">
+            <h3>Les't connect to me</h3>
+        </div>
+        <hr>
+        <div class="seccond">
+            <div class="left-s">
+                <h3>Maison rose</h3>
+                <p>Gallery online website, a platform that provides a place to store your precious photos and memories, you can also download images at maison rose</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/alfarizi_ishaq"><img src="icon/instagram.svg" alt=""></a>
+                    <a href=""><img src="icon/facebook.svg" alt=""></a>
+                    <a href=""><img src="icon/tiktok.svg" alt=""></a>
+                    <a href=""><img src="icon/whatsapp.svg" alt=""></a>
+                    <a href="https://github.com/Rizz-n/"><img src="icon/github.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="mid-s">
+                <h3>navigation</h3>
+                <a href="#">Home</a>
+                <a href="https://rizz-n.github.io/maison-rose/">Gallery</a>
+                <a href="#uploadimg">Upload</a>
+                <a href="#footer">about me</a>
+            </div>
+            <div class="right-s">
+                <h3>Contact</h3>
+                <a href="">arzalfarizi12@gmail.com</a>
+                <a href="https://wa.me/6285810614293">(+62) 858-1061-4293</a>
+            </div>
+        </div>
+        <hr>
+        <div class="third">
+            <div class="copy">
+                <p>Copyright &copy; 2025 <span>maison rose</span> .all right reserved.</p>
+            </div>
+            <div class="copy-r">
+                <a href="">Use term & condition</a>
+                <div style="width: 2px; background: #000; margin: 0 20px;"></div>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
