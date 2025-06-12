@@ -19,6 +19,15 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.phonescreen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -398,4 +407,24 @@ html{
   }
   .copy-r a:hover{
     color: var(--primary);
+  }
+
+  @media screen and (max-width: 768px) {
+    body{
+      height: 100vh;
+      max-height: 100%;
+      overflow: hidden;
+    }
+  .phonescreen{
+      display: flex;
+      height: 100%;
+      max-height: 100%;
+    }
+    .phonescreen h3{
+      text-align: center;
+
+    }
+    .phonescreen p{
+      text-align: center;
+    }
   }
