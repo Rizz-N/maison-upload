@@ -415,6 +415,20 @@ html{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+    }
+    .phonescreen::after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 180px;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--hover);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
     }
     .phonescreen h3{
       text-align: center;
