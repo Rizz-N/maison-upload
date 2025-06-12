@@ -423,4 +423,19 @@ html{
     .phonescreen p{
       text-align: center;
     }
+    .navbar{
+      display: hidden;
+    }
+    .hero{
+      display: hidden;
+    }
+    .uploader{
+      display: hidden;
+    }
+    .galery{
+      display: hidden;
+    }
+    .footer{
+      display: hidden;
+    }
   }
